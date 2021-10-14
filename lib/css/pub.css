@@ -1,0 +1,291 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(to right,var(--cor-base-2),var(--cor-3));
+}
+:root{
+    
+    /* pateta azul */
+    
+    --cor-1: #00222B;
+    --cor-2: #004d60;
+    --cor-3: #007795;
+    --cor-4: #00a1ca;
+    --cor-5: #00ccff;
+
+    /* paleta roza */
+    /*
+    --cor-1: #dd88a8;
+    --cor-2: #e59fb9;
+    --cor-3: #eeb7cb;
+    --cor-4: #f7cedd;
+    --cor-5: #ffe5ef; 
+    */
+
+/*     
+    --cor-1: #1a000a;
+    --cor-2: #530020;
+    --cor-3: #8c0035;
+    --cor-4: #c5004b;
+    --cor-5: #ff0060; 
+    */
+
+
+    --cor-base-1: #000;
+    --cor-base-2: #fff;
+
+    --height: calc(100%-180px);
+}
+
+/* Contrução do Site Começa Aqui */
+
+/* menu de navegação */
+.container{
+    position: fixed;
+    width: 100%;
+    
+    /* display: none; */
+}
+
+.container .navegation  a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.container .navegation {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center;
+    background: var(--cor-1);
+}
+.container .navegation .btn-principal{
+    margin-left: 100px;
+}
+
+.container .navegation .btn-principal,
+.container .navegation .btn-contato,
+.container .navegation .btn-login{
+    padding: 20px;
+    flex: calc(100%/3);
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--cor-base-2);
+}
+.container .navegation .btn-principal:hover,
+.container .navegation .btn-contato:hover,
+.container .navegation .btn-login:hover
+{
+    background: var(--cor-4);
+}
+
+.btn-ativo {
+    background: var(--cor-3);
+}
+
+/* Configuração geral da página */
+.main{
+    display: grid;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+    ;
+    grid-template-rows: 100vh 100vh 100vh;
+}
+
+
+/* Corpo da publicação */
+.bkg img {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+}
+
+.pub {
+    grid-area: a;
+    display: grid;
+    grid-template-areas: 
+        "pub-a pub-a pub-a"
+        "pub-b pub-c pub-c"
+    ;
+    grid-template-rows: 60px 100vh;
+}
+.pub .topoPub{
+    grid-area: pub-a;
+    background: var(--cor-base-2);
+    height: 60px;
+}
+.pub .esqPub{
+    grid-area: pub-b;
+    background: transparent;
+}
+
+.pub .dirPub {
+    grid-area: pub-c;
+    display: grid;
+    grid-template-areas: 
+    "l-1"
+    "l-2"
+    "l-3";
+}
+.pub .dirPub .topo{
+    grid-area: l-1;
+}
+.pub .dirPub .center{
+    grid-area: l-2;
+}
+.pub .dirPub .baixo{
+    grid-area: l-3;
+}
+
+.pub .dirPub .center{
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+    align-items: flex-end;    
+}
+.pub .dirPub .center h1{
+    transition: 0.5s;
+    font-size: 90px;
+    font-weight: 500;
+    color: var(--cor-7);
+    text-shadow:  3px 3px 5px var(--cor-1);
+    
+}
+.pub .dirPub .center h2{
+    font-size: 40px;
+    padding: 10px 0px;
+    color: var(--cor-1);
+    text-shadow: 2px 2px 4px var(--cor-5);
+}
+
+.pub .dirPub .center h3{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 0 ;
+    color: var(--cor-5);
+}
+.pub .dirPub .center .serv{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cor-5);
+}
+
+
+
+.contact {
+    grid-area: b;
+
+    display: grid;
+    grid-template-areas: "ctLeft ctRight";
+    grid-template-columns: 1fr 1fr;
+}
+.contact .ct-container{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background:var(--cor-5);
+
+}
+
+.contact .ct-left{
+    grid-area: ctLeft;   
+}
+
+/* TODO: Continuar do problema do grid */
+.contact .ct-right{
+    grid-area: ctRight;
+    display: grid;
+    grid-template-areas: 
+    "ctr-top"
+    "ctr-form"
+    "ctr-fundo";
+}
+
+.contact .ct-right .ct-container{
+ border-radius: 10px;
+}
+
+.contact .ct-left,
+.contact .ct-right{
+    padding-top: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder{
+    color: var(--cor-base-1);
+    font-size: 15px;
+}
+
+
+
+.contact form input[type=text],
+.contact form input[type=email],
+.contact form input[type=tel]{
+    border: 1px solid var(--cor-4);
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: var(--cor-5);
+    color: var(--cor-base-2);
+    font-size: 15px;
+
+}
+.contact form .radio {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+}
+.contact form textarea{
+    border: 1px solid var(--cor-4);
+    border-radius: 5px;
+    height: 90px;
+    margin-top: 10px;
+    padding: 12px 20px;
+    color: #00a1ca;
+
+    background: var(--cor-5);
+}
+.contact form input[type=button]{
+    border: 1px solid var(--cor-4);
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 10px;
+    background: var(--cor-2);
+
+    color: var(--cor-base-2);
+    font-size: 20px;
+}
+
+.login {
+    grid-area: c;
+}
+
+/* Abaixo desccrição das medidas de Responcividade */
+@media screen and (max-width: 1120px) {
+    .pub .dirPub h1{
+        transition: 0.5s;
+        font-size: 60px;
+    }
+}
+
+
+
+
+
+
