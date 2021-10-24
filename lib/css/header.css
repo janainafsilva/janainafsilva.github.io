@@ -144,7 +144,7 @@ body{
 .right-19{ right: 90vh;}
 .right-20{ right: 100vh;}
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     [class*="col-"] {
         width: 100vw;
         float: left;
