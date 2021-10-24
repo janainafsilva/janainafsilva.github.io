@@ -1,0 +1,26 @@
+
+main (grid)
+    Produzindo.
+    pub (flex ?)
+        titulo (h1)
+        Subtitulo 1 (h2)
+        Subtitulo 2 (h3)
+        lista(div)
+
+    contact
+        WhatsApp
+        Instagram
+        E-mail
+
+    login
+
+Header
+Menu
+Hero
+Main
+
+Banner
+Extra
+Image
+Footer
+
