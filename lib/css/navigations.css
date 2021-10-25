@@ -6,10 +6,39 @@
     float: left;
     display: block;
     text-align: center;
-    padding: 14px ;
+    
+    padding: 7px;
     font-size: 17px;
 }
 
 .menu a:hover{
     background: var(--cor-3);
+}
+
+.menu .icon {
+    display: none;
+}
+
+.menu a:first-child{
+    margin-left: 20px;
+}
+@media screen and (max-width: 500px){
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon{
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 500px){
+    .menu.responsive {position: relative;}
+    .menu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
