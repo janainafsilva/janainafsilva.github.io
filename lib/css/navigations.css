@@ -1,12 +1,14 @@
 .menu{
     width: 100%;
-    overflow: hidden;   
+    overflow: hidden;
+    background: red; 
 }
 
 .menu a {
     float: left;
     display: block;
     text-align: center;
+     
     
     padding: 7px;
     font-size: 17px;
@@ -20,9 +22,6 @@
     display: none;
 }
 
-.menu a:first-child{
-    margin-left: 20px;
-}
 @media screen and (max-width: 500px){
     .menu a:not(:first-child) {display: none;}
     .menu a.icon{
