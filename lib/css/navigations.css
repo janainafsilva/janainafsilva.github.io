@@ -21,6 +21,7 @@
 
 .menu a:first-child{
     margin-left: 20px;
+
 }
 @media screen and (max-width: 500px){
     .menu a:not(:first-child) {display: none;}
