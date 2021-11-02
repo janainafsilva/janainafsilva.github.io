@@ -1,0 +1,47 @@
+
+.menu div .hamburguer{
+    display: none;
+    background: blue;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+.hb-1{
+    width: 40px;
+    height: 6px;
+    background: black;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+.hb-2{
+    width: 40px;
+    height: 6px;
+    background: black;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+.hb-3{
+    width: 40px;
+    height: 6px;
+    background: black;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 500px) {
+    .menu div .hamburguer{
+        float: right;
+        display: block;
+    }
+
+    .menu.responsive div .hamburguer{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+
+

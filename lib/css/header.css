@@ -1,5 +1,7 @@
 @charset "UTF-8";
+@import url("hamburguer.css");
 @import url("navigations.css");
+
 
 
 :root{
@@ -7,30 +9,28 @@
     --cor-base-2: #fff;
 
     /* pateta azul */
-        
+/*        
     --cor-1: #00222B;
     --cor-2: #004d60;
     --cor-3: #007795;
     --cor-4: #00a1ca;
     --cor-5: #00ccff;
-
+*/
 
     /* paleta roza */
-/*     
+     
     --cor-1: #dd88a8;
     --cor-2: #e59fb9;
     --cor-3: #eeb7cb;
     --cor-4: #f7cedd;
     --cor-5: #ffe5ef; 
-    */
-
-/*     
+/*    
     --cor-1: #1a000a;
     --cor-2: #530020;
     --cor-3: #8c0035;
     --cor-4: #c5004b; 
     --cor-5: #ff0060; 
-    */
+  */  
 
     --fonte-mobi-size: 20px;
     --fonte-desc-size: 20px;
@@ -99,7 +99,7 @@ body{
 .row-16{ height: 80vh;}
 .row-17{ height: 85vh;}
 .row-18{ height: 90vh;}
-.row-19{ height: 90vh;}
+.row-19{ height: 95vh;}
 .row-20{ height: 100vh;}
 
 .bottom-1{ bottom: 5vh;}

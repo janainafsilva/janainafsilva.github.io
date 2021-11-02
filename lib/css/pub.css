@@ -2,20 +2,15 @@
 
 /* Definições globais para a formação do esqueleto do sistema */
 
-
-
-
 .color-1{
     background: yellow;
 }
 .color-2{
     background: blue;
 }
-
 .color-3{
     background: red;
 }
-
 .color-4{
     background: greenyellow;
 }
@@ -59,7 +54,7 @@
     font-family: var(--ft-family-2);
     font-size: 40px;
     color: var(--cor-5);
-    text-shadow: 5px 5px 4px #e5e5ff;
+    text-shadow: 5px 5px 4px var(--cor-base-2);
     right: 0%;
 }
 

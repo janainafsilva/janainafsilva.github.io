@@ -9,29 +9,22 @@
     <title>Janaina F Silva - Atendimentos Home Care</title>
 </head>
 <body>
-
     <!-- Menu de Navegação -->
-    <div class="main col-12 row-20 color-2">
+    <div class="main col-12 color-2">
         <div id="myMenu" class="menu">
-            <a class="" href="#">Home </a>
-            <a class="" href="#">Serviços</a>
-            <a class="" href="#">Contato</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        colocar banner com apresentação da empresa/cliente
+            <a  href="#">Home </a>
+            <a  href="#">Serviços</a>
+            <a  href="#">Contato</a>
+            <div   onclick="myFunction()">
+                <div class="hamburguer">
+                    <div class="hb-1"></div>
+                    <div class="hb-2"></div>
+                    <div class="hb-3"></div>
+                </div>
+            </div>
+        </div>    
     </div>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myMenu");
-
-            if(x.className === "menu"){
-                x.className += " responsive";
-            } else {
-                x.className = "menu";
-            }
-        }
-    </script>
+    
+    <script src="lib/js/kernel.js"></script>
 </body>
 </html>

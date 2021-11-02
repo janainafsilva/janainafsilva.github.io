@@ -5,37 +5,33 @@
 }
 
 .menu a {
+
     float: left;
     display: block;
     text-align: center;
-     
-    
-    padding: 7px;
+    padding:20px;
     font-size: 17px;
+    height: 60px;
+    background: yellow;
 }
+
+
 
 .menu a:hover{
     background: var(--cor-3);
 }
 
-.menu .icon {
-    display: none;
+@media screen and (max-width: 500px){
+    .menu a:not(:first-child) {display: none;}   
 }
 
-@media screen and (max-width: 500px){
-    .menu a:not(:first-child) {display: none;}
-    .menu a.icon{
-        float: right;
-        display: block;
+@media screen and (max-width: 500px) {
+    .menu.responsive {
+        position: relative;
     }
-}
-@media screen and (max-width: 500px){
-    .menu.responsive {position: relative;}
-    .menu.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+
+    
+    
     .menu.responsive a {
         float: none;
         display: block;
